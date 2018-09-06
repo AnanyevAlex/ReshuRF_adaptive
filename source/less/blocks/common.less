@@ -42,7 +42,7 @@ input[type="radio"].visually-hidden {
 
 .container {
   position: relative;
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
   background-color: #ffffff;
@@ -55,7 +55,7 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: @mobile-width-only) {
   .container {
-    max-width: 320px;
+    max-width: 767px;
   }
 
   .tablet-width {
@@ -63,10 +63,6 @@ input[type="radio"].visually-hidden {
   }
 
   .info-form__require {
-    display: none;
-  }
-
-  .no-mobile {
     display: none;
   }
 }
@@ -84,13 +80,5 @@ input[type="radio"].visually-hidden {
 @media (min-width: @desktop-width) {
   .container {
     width: 1200px;
-  }
-
-  .desktop-width {
-    display: block;
-  }
-
-  .no-desktop {
-    display: none;
-  }
+  }sSS
 }
